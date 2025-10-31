@@ -1,16 +1,28 @@
 const ratioButton=document.querySelector('#ratio');
 const resetButton=document.querySelector('#reset');
 const clearButton=document.querySelector('#check');
-const mianContainer=document.querySelector('.div-container');
+const mainContainer=document.querySelector('.div-container');
 const colorInput=document.querySelector('#color-picker');
 const clearLabel=document.querySelector('#clear');
 const ratio=16;
-
 let isMousedown=false;
 
 createDivs(ratio)
+
+
+ratioButton.addEventListener('click',()=>{
+    let value=prompt('Enter the ratio in a range (4-100) ex. 16 for 16 x 16').trim();
+
+    if((value>100)||(value<4)||isNaN(value)){
+        alert('Invalid input ')
+        return -1;
+    }else{
+        createDivs(value);
+    }
+})
+
 function createDivs(ratio){
-    mianContainer.innerHTML='';
+    mainContainer.innerHTML='';
 
     for(let i=1;i<=(ratio * ratio);i++){
         let divI=document.createElement('div');
@@ -38,6 +50,6 @@ function createDivs(ratio){
             }
 
         })
-                    mianContainer.appendChild(divI)
+                    mainContainer.appendChild(divI)
     }
 }
