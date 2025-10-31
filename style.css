@@ -76,3 +76,9 @@ button, #clear {
     width: 90%;
     border-radius: 5px;
 }
+
+.div-inside {
+    border: solid 1px rgb(0, 0, 0);
+    aspect-ratio: 1 / 1;
+    flex: 0 0 auto;
+}
