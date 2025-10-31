@@ -12,5 +12,7 @@ function createDivs(ratio){
 
     for(let i=1;i<=(ratio * ratio);i++){
         let divI=document.createElement('div');
+        divI.classList.add('div-inside')
+        divI.style.width=`${(960/ratio)}px`
     }
 }
