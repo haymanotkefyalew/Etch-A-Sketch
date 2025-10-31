@@ -17,6 +17,11 @@ h1 {
 button,input,label {
     display: inline-block;
 }
+.div-page {
+    display: flex;
+    margin: 50px auto;
+    justify-content: space-between;
+}
 button, #clear {
     padding: 10px 20px;
     border: solid black 1px;
