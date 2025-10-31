@@ -49,10 +49,30 @@ button,input,label {
     background-color: white;
 }
 
+#check {
+    display: none;
+}
+
 button, #clear {
     padding: 10px 20px;
     border: solid black 1px;
     background-color: #f0f8ff;
     text-align: center;
+    border-radius: 5px;
+}
+.inputs{
+    text-align: center;
+}
+#clear {
+    width: 100%;
+}
+
+.pick {
+    display: block;
+    color: #f0f8ff;
+    margin-top: 5px;
+}
+#color-picker{
+    width: 90%;
     border-radius: 5px;
 }
