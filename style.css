@@ -21,6 +21,7 @@ button,input,label {
     display: flex;
     margin: 50px auto;
     justify-content: space-between;
+    position: relative;
 }
 
 .div-buttons {
@@ -32,10 +33,22 @@ button,input,label {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 150px 50px 0px;
+    padding: 50px 50px 0px;
     background-color: #132440;
     height: 100%;
 }
+
+.div-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 960px;
+    width: 960px;
+    justify-content: start;
+    align-items: start;
+    margin: 0 35px 0 auto;
+    background-color: white;
+}
+
 button, #clear {
     padding: 10px 20px;
     border: solid black 1px;
