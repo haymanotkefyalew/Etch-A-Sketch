@@ -40,6 +40,9 @@ function createDivs(ratio){
         divI.addEventListener('mouseup', (e) => {
                 isMousedown=false;
         })
+        resetButton.addEventListener('click',()=>{
+            divI.style.backgroundColor = '#ffffff'
+        })
         divI.addEventListener('mouseover',(e)=>{
             if(isMousedown){
                 if (clearButton.checked) {
